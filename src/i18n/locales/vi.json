@@ -23,14 +23,17 @@
     },
     "plants": {
       "value": "15+",
+      "unit": "",
       "label": "Nhà Máy"
     },
     "homes": {
       "value": "5M+",
+      "unit": "",
       "label": "Hộ Gia Đình"
     },
     "experience": {
       "value": "25+",
+      "unit": "",
       "label": "Năm Kinh Nghiệm"
     }
   },

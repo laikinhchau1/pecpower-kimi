@@ -23,14 +23,17 @@
     },
     "plants": {
       "value": "15+",
+      "unit": "",
       "label": "Power Plants"
     },
     "homes": {
       "value": "5M+",
+      "unit": "",
       "label": "Homes Powered"
     },
     "experience": {
       "value": "25+",
+      "unit": "",
       "label": "Years of Experience"
     }
   },

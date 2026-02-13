@@ -1,5 +1,6 @@
-import { Droplets, MapPin, Phone, Mail, Clock, Facebook, Linkedin, Youtube, Twitter } from 'lucide-react';
+import { Droplets, MapPin, Phone, Mail, Clock, Facebook, Linkedin, Youtube, Twitter, Settings } from 'lucide-react';
 import { useTranslation } from '@/i18n/simple-i18n';
+import { Link } from 'react-router-dom';
 
 const quickLinks = ['home', 'about', 'projects', 'services', 'news'];
 const serviceLinks = ['powerGeneration', 'plantOperations', 'environmental'];
@@ -154,7 +155,7 @@ export function Footer({ onScrollToSection }: FooterProps) {
             <p className="text-gray-400 text-sm">
               {t('footer.copyright')}
             </p>
-            <div className="flex gap-6">
+            <div className="flex gap-6 items-center">
               <a 
                 href="#" 
                 onClick={(e) => e.preventDefault()}
@@ -169,6 +170,13 @@ export function Footer({ onScrollToSection }: FooterProps) {
               >
                 {t('footer.terms')}
               </a>
+              <Link 
+                to="/admin"
+                className="text-gray-500 hover:text-cyan-400 text-sm transition-colors flex items-center gap-1"
+              >
+                <Settings className="w-3 h-3" />
+                Admin
+              </Link>
             </div>
           </div>
         </div>

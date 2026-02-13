@@ -99,7 +99,7 @@ export function Projects({ onViewDetails }: ProjectsProps) {
                 <Button
                   variant="outline"
                   onClick={() => onViewDetails(project.key)}
-                  className="border-white/30 text-white hover:bg-white/10 hover:text-white group/btn"
+                  className="border-white/30 text-black hover:bg-white/10 hover:text-white group/btn"
                 >
                   {t('projects.viewDetails')}
                   <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />

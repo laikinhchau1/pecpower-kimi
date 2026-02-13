@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
+import { createContext, useContext, useState, useCallback, type ReactNode, useEffect } from 'react';
 import enTranslations from './locales/en.json';
 import viTranslations from './locales/vi.json';
 
@@ -11,12 +11,44 @@ interface I18nContextType {
   currentLanguage: Language;
   changeLanguage: (lang: Language) => void;
   toggleLanguage: () => void;
+  refreshTranslations: () => void;
 }
 
-const translations: Record<Language, Translations> = {
-  en: enTranslations,
-  vi: viTranslations,
-};
+const ADMIN_STORAGE_KEY = 'hydropower_admin_data';
+
+// Merge admin data with original translations
+function getMergedTranslations(lang: Language): Translations {
+  const original = lang === 'en' ? enTranslations : viTranslations;
+  
+  try {
+    const stored = localStorage.getItem(ADMIN_STORAGE_KEY);
+    if (stored) {
+      const adminData = JSON.parse(stored);
+      if (adminData[lang]) {
+        return deepMerge(original, adminData[lang]);
+      }
+    }
+  } catch (e) {
+    console.error('Failed to load admin translations:', e);
+  }
+  
+  return original;
+}
+
+// Deep merge two objects
+function deepMerge<T>(target: T, source: Partial<T>): T {
+  const result = { ...target };
+  
+  for (const key in source) {
+    if (source[key] !== null && typeof source[key] === 'object' && !Array.isArray(source[key])) {
+      result[key] = deepMerge(result[key] as any, source[key] as any);
+    } else {
+      result[key] = source[key] as any;
+    }
+  }
+  
+  return result;
+}
 
 const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
@@ -37,12 +69,31 @@ function getNestedValue(obj: Record<string, unknown>, path: string): string {
 
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [currentLanguage, setCurrentLanguage] = useState<Language>('vi');
+  const [translations, setTranslations] = useState<Record<Language, Translations>>({
+    en: enTranslations,
+    vi: viTranslations,
+  });
+
+  // Load merged translations on mount
+  useEffect(() => {
+    setTranslations({
+      en: getMergedTranslations('en'),
+      vi: getMergedTranslations('vi'),
+    });
+  }, []);
+
+  const refreshTranslations = useCallback(() => {
+    setTranslations({
+      en: getMergedTranslations('en'),
+      vi: getMergedTranslations('vi'),
+    });
+  }, []);
 
   const t = useCallback(
     (key: string): string => {
       return getNestedValue(translations[currentLanguage] as Record<string, unknown>, key);
     },
-    [currentLanguage]
+    [currentLanguage, translations]
   );
 
   const changeLanguage = useCallback((lang: Language) => {
@@ -60,7 +111,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 
   return (
     <I18nContext.Provider
-      value={{ t, currentLanguage, changeLanguage, toggleLanguage }}
+      value={{ t, currentLanguage, changeLanguage, toggleLanguage, refreshTranslations }}
     >
       {children}
     </I18nContext.Provider>

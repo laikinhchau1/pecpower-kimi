@@ -1,13 +1,17 @@
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
-import { MainLayout } from '@/components/custom';
+import { MainLayout, ProtectedRoute } from '@/components/custom';
 import {
   HomePage,
   ContactPage,
   ProjectDetailPage,
   NewsDetailPage,
   ServiceDetailPage,
+  AdminPage,
+  AdminLogin,
 } from '@/pages';
 import { I18nProvider } from '@/i18n/simple-i18n';
+import { AuthProvider } from '@/hooks/useAuth';
+import { Toaster } from '@/components/ui/sonner';
 import './App.css';
 
 const router = createBrowserRouter([
@@ -41,13 +45,28 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: '/admin/login',
+    element: <AdminLogin />,
+  },
+  {
+    path: '/admin',
+    element: (
+      <ProtectedRoute>
+        <AdminPage />
+      </ProtectedRoute>
+    ),
+  },
 ]);
 
 function App() {
   return (
-    <I18nProvider>
-      <RouterProvider router={router} />
-    </I18nProvider>
+    <AuthProvider>
+      <I18nProvider>
+        <RouterProvider router={router} />
+        <Toaster position="top-right" richColors />
+      </I18nProvider>
+    </AuthProvider>
   );
 }
 
