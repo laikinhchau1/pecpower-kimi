@@ -2,25 +2,29 @@ import { useState, useEffect, useCallback } from 'react';
 import { Menu, X, Droplets, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from '@/i18n/simple-i18n';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const navLinks = [
-  { key: 'home', href: '#home' },
-  { key: 'about', href: '#about' },
-  { key: 'projects', href: '#projects' },
-  { key: 'services', href: '#services' },
-  { key: 'news', href: '#news' },
-  { key: 'contact', href: '#contact' },
+  { key: 'home', href: '#home', path: '/' },
+  { key: 'about', href: '#about', path: '/#about' },
+  { key: 'projects', href: '#projects', path: '/#projects' },
+  { key: 'services', href: '#services', path: '/#services' },
+  { key: 'news', href: '#news', path: '/#news' },
+  { key: 'contact', href: '#contact', path: '/#contact' },
 ];
 
 interface NavigationProps {
-  onContactClick: () => void;
+  onScrollToSection: (href: string) => void;
 }
 
-export function Navigation({ onContactClick }: NavigationProps) {
+export function Navigation({ onScrollToSection }: NavigationProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const { t, currentLanguage, toggleLanguage } = useTranslation();
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHomePage = location.pathname === '/';
 
   // Handle scroll for navbar styling
   useEffect(() => {
@@ -32,8 +36,10 @@ export function Navigation({ onContactClick }: NavigationProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Handle intersection observer for active section
+  // Handle intersection observer for active section (only on homepage)
   useEffect(() => {
+    if (!isHomePage) return;
+
     const observerOptions = {
       rootMargin: '-50% 0px -50% 0px',
       threshold: 0,
@@ -58,21 +64,24 @@ export function Navigation({ onContactClick }: NavigationProps) {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [isHomePage]);
 
-  const scrollToSection = useCallback((href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleNavClick = useCallback((e: React.MouseEvent, href: string) => {
+    e.preventDefault();
+    onScrollToSection(href);
     setIsMobileMenuOpen(false);
-  }, []);
+  }, [onScrollToSection]);
+
+  const handleContactClick = () => {
+    navigate('/contact');
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled
+          isScrolled || !isHomePage
             ? 'glass shadow-lg py-3'
             : 'bg-transparent py-5'
         }`}
@@ -80,40 +89,34 @@ export function Navigation({ onContactClick }: NavigationProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a
-              href="#home"
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection('#home');
-              }}
+            <Link
+              to="/"
               className="flex items-center gap-2 group"
             >
               <div className={`p-2 rounded-lg transition-all duration-300 ${
-                isScrolled ? 'bg-gradient-to-br from-blue-500 to-cyan-500' : 'bg-white/20'
+                isScrolled || !isHomePage ? 'bg-gradient-to-br from-blue-500 to-cyan-500' : 'bg-white/20'
               }`}>
                 <Droplets className="w-6 h-6 text-white" />
               </div>
               <span className={`text-xl font-bold transition-colors duration-300 ${
-                isScrolled ? 'text-[#0a1e3f]' : 'text-white'
+                isScrolled || !isHomePage ? 'text-[#0a1e3f]' : 'text-white'
               }`}>
                 HydroPower
               </span>
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => {
                 const isActive = activeSection === link.href.replace('#', '');
+                const isDark = isScrolled || !isHomePage;
                 return (
                   <a
                     key={link.key}
                     href={link.href}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToSection(link.href);
-                    }}
+                    onClick={(e) => handleNavClick(e, link.href)}
                     className={`relative text-sm font-medium transition-colors duration-300 ${
-                      isScrolled
+                      isDark
                         ? isActive
                           ? 'text-blue-600'
                           : 'text-gray-700 hover:text-blue-600'
@@ -123,9 +126,9 @@ export function Navigation({ onContactClick }: NavigationProps) {
                     }`}
                   >
                     {t(`nav.${link.key}`)}
-                    {isActive && (
+                    {isActive && isHomePage && (
                       <span className={`absolute -bottom-1 left-0 right-0 h-0.5 rounded-full ${
-                        isScrolled ? 'bg-blue-600' : 'bg-white'
+                        isDark ? 'bg-blue-600' : 'bg-white'
                       }`} />
                     )}
                   </a>
@@ -139,7 +142,7 @@ export function Navigation({ onContactClick }: NavigationProps) {
               <button
                 onClick={toggleLanguage}
                 className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-300 ${
-                  isScrolled
+                  isScrolled || !isHomePage
                     ? 'text-gray-700 hover:bg-gray-100'
                     : 'text-white/90 hover:bg-white/10'
                 }`}
@@ -150,9 +153,9 @@ export function Navigation({ onContactClick }: NavigationProps) {
 
               {/* CTA Button */}
               <Button
-                onClick={onContactClick}
+                onClick={handleContactClick}
                 className={`transition-all duration-300 ${
-                  isScrolled
+                  isScrolled || !isHomePage
                     ? 'bg-[#0a1e3f] hover:bg-[#1e3a5f] text-white'
                     : 'bg-white text-[#0a1e3f] hover:bg-white/90'
                 }`}
@@ -165,7 +168,7 @@ export function Navigation({ onContactClick }: NavigationProps) {
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`lg:hidden p-2 rounded-lg transition-colors duration-300 ${
-                isScrolled
+                isScrolled || !isHomePage
                   ? 'text-gray-700 hover:bg-gray-100'
                   : 'text-white hover:bg-white/10'
               }`}
@@ -208,12 +211,9 @@ export function Navigation({ onContactClick }: NavigationProps) {
                   <a
                     key={link.key}
                     href={link.href}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToSection(link.href);
-                    }}
+                    onClick={(e) => handleNavClick(e, link.href)}
                     className={`text-lg font-medium py-3 px-4 rounded-lg transition-colors duration-300 ${
-                      isActive
+                      isActive && isHomePage
                         ? 'bg-blue-50 text-blue-600'
                         : 'text-gray-800 hover:bg-gray-50 hover:text-blue-600'
                     }`}
@@ -238,10 +238,7 @@ export function Navigation({ onContactClick }: NavigationProps) {
 
               {/* CTA Button */}
               <Button 
-                onClick={() => {
-                  setIsMobileMenuOpen(false);
-                  onContactClick();
-                }}
+                onClick={handleContactClick}
                 className="w-full mt-4 bg-[#0a1e3f] hover:bg-[#1e3a5f] text-white"
               >
                 {t('nav.getQuote')}
