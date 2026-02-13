@@ -43,7 +43,7 @@ const articleDetails = {
       author: 'Communications Team',
       readTime: '5 min read',
       content: `
-        <p class="mb-4 text-lg">Today, we are proud to announce that our new 150MW hydropower plant has officially commenced operations. This marks a significant milestone in our strategy to expand clean energy production capacity.</p>
+        <p class="mb-4 text-lg">Today, we are proud to announce that our new 150MW PECPower plant has officially commenced operations. This marks a significant milestone in our strategy to expand clean energy production capacity.</p>
         
         <h3 class="text-xl font-bold text-[#0a1e3f] mt-8 mb-4">Advanced Technology</h3>
         <p class="mb-4">The plant is equipped with the latest generation Francis turbines, achieving conversion efficiency of up to 94%. The 24/7 automated monitoring system ensures safe and efficient operations. This technology helps maximize power output while minimizing environmental impact.</p>
@@ -157,7 +157,7 @@ const articleDetails = {
         <p class="mb-4 text-lg">The company announces plans to invest in expanding renewable energy capacity by an additional 500MW during 2026-2028. This is a significant step in our sustainable development strategy.</p>
         
         <h3 class="text-xl font-bold text-[#0a1e3f] mt-8 mb-4">Key Projects</h3>
-        <p class="mb-4">The plan includes constructing 3 new hydropower plants and upgrading 5 existing facilities. Total estimated investment is 15,000 billion VND.</p>
+        <p class="mb-4">The plan includes constructing 3 new PECPower plants and upgrading 5 existing facilities. Total estimated investment is 15,000 billion VND.</p>
         
         <h3 class="text-xl font-bold text-[#0a1e3f] mt-8 mb-4">International Cooperation</h3>
         <p class="mb-4">We have signed partnerships with European and Japanese partners to transfer the most advanced hydroelectric technology.</p>
@@ -165,7 +165,7 @@ const articleDetails = {
         <div class="bg-green-50 p-6 rounded-xl my-8">
           <h4 class="font-bold text-[#0a1e3f] mb-3">Implementation Roadmap</h4>
           <ul class="space-y-2 text-gray-700">
-            <li>• 2026: Begin Sông Xanh hydropower plant construction (200MW)</li>
+            <li>• 2026: Begin Sông Xanh PECPower plant construction (200MW)</li>
             <li>• 2027: Plant operations and new project groundbreaking</li>
             <li>• 2028: Complete entire expansion roadmap</li>
           </ul>

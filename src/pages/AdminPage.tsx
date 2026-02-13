@@ -220,7 +220,7 @@ const sections: SectionConfig[] = [
     title: 'SEO',
     icon: <Settings className="w-4 h-4" />,
     fields: [
-      { key: 'seo.title', label: 'Tiêu đề trang', type: 'text', placeholder: 'HydroPower Vietnam...' },
+      { key: 'seo.title', label: 'Tiêu đề trang', type: 'text', placeholder: 'PECPower...' },
       { key: 'seo.description', label: 'Meta description', type: 'textarea', placeholder: 'Công ty thủy điện...' },
       { key: 'seo.keywords', label: 'Keywords', type: 'text', placeholder: 'thủy điện, Việt Nam...' },
     ],

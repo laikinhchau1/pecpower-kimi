@@ -40,8 +40,8 @@
   "about": {
     "tagline": "About Us",
     "title": "Pioneering Sustainable Energy",
-    "description1": "As one of Vietnam's leading hydroelectric power companies, we are committed to delivering clean, reliable energy while protecting our environment.",
-    "description2": "Our state-of-the-art facilities harness the natural power of water to generate electricity for millions of homes and businesses across the country.",
+    "description1": "Vietnam's leading mechanical and electrical equipment contractor for hydropower, specializing in import, transportation and electrical installation for hydropower projects domestically and internationally.",
+    "description2": "With a team of experienced engineers, we have successfully implemented numerous hydropower projects in Vietnam and Laos, ensuring quality and construction schedule.",
     "features": {
       "certified": "ISO 14001 Environmental Certified",
       "technology": "Advanced Turbine Technology",
@@ -52,19 +52,19 @@
   },
   "services": {
     "tagline": "Our Services",
-    "title": "Comprehensive Hydroelectric Solutions",
-    "subtitle": "From development to operations, we provide end-to-end services",
+    "title": "Hydropower Energy Services",
+    "subtitle": "M&E equipment contractor, import, transportation and electrical installation",
     "powerGeneration": {
-      "title": "Power Generation",
-      "description": "Clean, renewable electricity generation using advanced hydroelectric technology with minimal environmental impact."
+      "title": "M&E Equipment",
+      "description": "Supply and installation of imported mechanical and electrical equipment for hydropower, ensuring high quality and advanced technology."
     },
     "plantOperations": {
-      "title": "Plant Operations",
-      "description": "24/7 monitoring and maintenance ensuring optimal performance and reliability of hydroelectric facilities."
+      "title": "Electrical Installation",
+      "description": "Electrical construction and installation for hydropower projects with experienced engineers, ensuring schedule and safety."
     },
     "environmental": {
-      "title": "Environmental Management",
-      "description": "Sustainable practices that protect local ecosystems while maximizing energy production efficiency."
+      "title": "Cargo Transportation",
+      "description": "Transportation services for equipment and goods for hydropower projects domestically and internationally."
     },
     "learnMore": "Learn More"
   },
@@ -73,16 +73,16 @@
     "title": "Our Major Projects",
     "subtitle": "Showcasing our commitment to sustainable energy",
     "project1": {
-      "title": "Sông Ba Hydropower Plant",
+      "title": "Nam Nghiep 2A Hydropower - Laos",
+      "location": "Laos",
+      "capacity": "TM1 Rotor Installation",
+      "description": "Hydropower project in Laos, successful TM1 rotor installation"
+    },
+    "project2": {
+      "title": "Sông Ba PECPower Plant",
       "location": "Gia Lai Province",
       "capacity": "220 MW",
       "description": "One of the largest hydroelectric facilities in Central Vietnam"
-    },
-    "project2": {
-      "title": "Đồng Nai Hydro Complex",
-      "location": "Lâm Đồng Province",
-      "capacity": "180 MW",
-      "description": "Multi-dam system providing clean energy to Southern Vietnam"
     },
     "viewDetails": "View Details"
   },
@@ -159,21 +159,21 @@
     "secondary": "Download Brochure"
   },
   "footer": {
-    "description": "Leading Vietnam's sustainable energy transformation through innovative hydroelectric solutions.",
+    "description": "Mechanical and electrical equipment contractor for hydropower, import, transportation and electrical installation.",
     "quickLinks": "Quick Links",
     "services": "Services",
     "contact": "Contact",
-    "address": "123 Energy Street, District 1, Ho Chi Minh City",
+    "address": "LK26.77, Hinode Royal Park, Hanoi, Vietnam",
     "phone": "+84 28 1234 5678",
-    "email": "info@hydropower.vn",
+    "email": "pecpower.vn@gmail.com",
     "hours": "Mon-Fri: 8:00 - 17:00",
-    "copyright": "© 2026 HydroPower Vietnam. All rights reserved.",
+    "copyright": "© 2026 PECPower. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
   "seo": {
-    "title": "HydroPower Vietnam | Leading Hydroelectric Energy Company",
-    "description": "Vietnam's premier hydroelectric power company delivering clean, sustainable energy solutions. 2,500+ MW capacity serving millions of homes.",
+    "title": "PECPower | Leading Hydroelectric Energy Company",
+    "description": "Vietnam's leading mechanical and electrical equipment contractor for hydropower, import, transportation and electrical installation. Executing hydropower projects in Vietnam and Laos.",
     "keywords": "hydroelectric, Vietnam, clean energy, renewable energy, power plant, sustainable energy, thủy điện, năng lượng tái tạo"
   }
 }

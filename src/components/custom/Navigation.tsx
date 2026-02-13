@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { Menu, X, Droplets, Globe } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from '@/i18n/simple-i18n';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -93,16 +93,11 @@ export function Navigation({ onScrollToSection }: NavigationProps) {
               to="/"
               className="flex items-center gap-2 group"
             >
-              <div className={`p-2 rounded-lg transition-all duration-300 ${
-                isScrolled || !isHomePage ? 'bg-gradient-to-br from-blue-500 to-cyan-500' : 'bg-white/20'
-              }`}>
-                <Droplets className="w-6 h-6 text-white" />
-              </div>
-              <span className={`text-xl font-bold transition-colors duration-300 ${
-                isScrolled || !isHomePage ? 'text-[#0a1e3f]' : 'text-white'
-              }`}>
-                HydroPower
-              </span>
+              <img 
+                src="/logo.svg" 
+                alt="PECPower" 
+                className="h-14 w-auto transition-all duration-300"
+              />
             </Link>
 
             {/* Desktop Navigation */}

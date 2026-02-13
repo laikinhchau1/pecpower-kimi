@@ -106,7 +106,7 @@ const serviceDetails = {
     en: {
       title: 'Plant Operations',
       subtitle: 'Professional operations management',
-      description: 'Comprehensive operation and maintenance services for hydropower plants, ensuring maximum efficiency and equipment longevity.',
+      description: 'Comprehensive operation and maintenance services for PECPower plants, ensuring maximum efficiency and equipment longevity.',
       features: [
         { title: 'Real-time Monitoring', desc: 'Modern SCADA systems' },
         { title: 'Predictive Maintenance', desc: 'AI analysis, incident prevention' },

@@ -61,7 +61,7 @@ const serviceDetails = {
       title: 'Power Generation',
       subtitle: 'Clean, efficient power solutions for the future',
       description: 'We provide electricity generation services from hydroelectric sources with the most advanced technology, ensuring high efficiency and minimal environmental impact.',
-      longDescription: 'With over 20 years of experience in hydropower, we have developed and operated numerous hydroelectric plants with a total capacity exceeding 2,500 MW. Our solutions are custom-designed for each terrain and specific hydrological conditions, ensuring maximum performance while minimizing environmental impact.',
+      longDescription: 'With over 20 years of experience in PECPower, we have developed and operated numerous hydroelectric plants with a total capacity exceeding 2,500 MW. Our solutions are custom-designed for each terrain and specific hydrological conditions, ensuring maximum performance while minimizing environmental impact.',
       features: [
         { title: 'Optimal Design', desc: 'Precise capacity and efficiency calculations for each specific location' },
         { title: '24/7 Operations', desc: 'Continuous monitoring, ensuring stability and reliability' },
@@ -87,7 +87,7 @@ const serviceDetails = {
         'Comprehensive 10-year warranty',
       ],
       process: [
-        { step: '01', title: 'Survey', desc: 'Assess terrain and hydropower potential' },
+        { step: '01', title: 'Survey', desc: 'Assess terrain and PECPower potential' },
         { step: '02', title: 'Design', desc: 'Optimize design for maximum efficiency' },
         { step: '03', title: 'Construction', desc: 'Build to international standards' },
         { step: '04', title: 'Operation', desc: 'Professional monitoring and operation' },
@@ -159,7 +159,7 @@ const serviceDetails = {
     en: {
       title: 'Plant Operations',
       subtitle: 'Professional, efficient operations management',
-      description: 'Comprehensive operation and maintenance services for hydropower plants, ensuring maximum efficiency and equipment longevity.',
+      description: 'Comprehensive operation and maintenance services for PECPower plants, ensuring maximum efficiency and equipment longevity.',
       longDescription: 'Our operations team is extensively trained with international certifications, available 24/7 to ensure your plant operates at optimal performance. We apply advanced monitoring technology to detect and address issues before they affect operations.',
       features: [
         { title: 'Real-time Monitoring', desc: 'Modern SCADA system 24/7' },
@@ -510,7 +510,7 @@ export function ServiceDetailPage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-blue-500" />
-                  <span className="text-gray-600">info@hydropower.vn</span>
+                  <span className="text-gray-600">pecpower.vn@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-blue-500" />

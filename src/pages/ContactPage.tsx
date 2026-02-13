@@ -50,7 +50,7 @@ export function ContactPage() {
       success: 'Gửi thành công!',
       successMessage: 'Cảm ơn bạn đã liên hệ. Chúng tôi sẽ phản hồi trong thờ gian sớm nhất.',
       contactInfo: 'Thông tin liên hệ',
-      address: '123 Đường Năng Lượng, Quận 1, TP. Hồ Chí Minh',
+      address: 'LK26.77, KĐT Hinode Royal Park, Hanoi, Vietnam',
       phoneLabel: 'Điện thoại',
       emailLabel: 'Email',
       hours: 'Thứ 2 - Thứ 6: 8:00 - 17:00',
@@ -244,7 +244,7 @@ export function ContactPage() {
                     </div>
                     <div>
                       <p className="font-medium mb-1">{c.emailLabel}</p>
-                      <p className="text-white/80 text-sm">info@hydropower.vn</p>
+                      <p className="text-white/80 text-sm">pecpower.vn@gmail.com</p>
                     </div>
                   </div>
                 </div>

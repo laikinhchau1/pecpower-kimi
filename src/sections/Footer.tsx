@@ -1,4 +1,4 @@
-import { Droplets, MapPin, Phone, Mail, Clock, Facebook, Linkedin, Youtube, Twitter, Settings } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Facebook, Linkedin, Youtube, Twitter, Settings } from 'lucide-react';
 import { useTranslation } from '@/i18n/simple-i18n';
 import { Link } from 'react-router-dom';
 
@@ -30,15 +30,16 @@ export function Footer({ onScrollToSection }: FooterProps) {
               onClick={(e) => handleLinkClick(e, '#home')}
               className="flex items-center gap-2 mb-6 hover:opacity-80 transition-opacity"
             >
-              <div className="p-2 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500">
-                <Droplets className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-xl font-bold">HydroPower</span>
+              <img 
+                src="/logo.svg" 
+                alt="PECPower" 
+                className="h-16 w-auto"
+              />
             </a>
 
             {/* Description */}
             <p className="text-gray-400 mb-6 leading-relaxed">
-              {t('footer.description')}
+              Nhà thầu thiết bị cơ điện thủy điện, nhập khẩu, vận chuyển và xây lắp điện.
             </p>
 
             {/* Social Links */}
@@ -125,7 +126,7 @@ export function Footer({ onScrollToSection }: FooterProps) {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400">{t('footer.address')}</span>
+                <span className="text-gray-400">LK26.77, KĐT Hinode Royal Park, Hà Nội</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
@@ -135,8 +136,8 @@ export function Footer({ onScrollToSection }: FooterProps) {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                <a href="mailto:info@hydropower.vn" className="text-gray-400 hover:text-white transition-colors">
-                  {t('footer.email')}
+                <a href="mailto:pecpower.vn@gmail.com" className="text-gray-400 hover:text-white transition-colors">
+                  pecpower.vn@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">

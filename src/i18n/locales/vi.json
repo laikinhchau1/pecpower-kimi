@@ -11,7 +11,7 @@
   "hero": {
     "tagline": "NĂNG LƯỢNG SẠCH CHO TƯƠNG LAI",
     "title": "Khai Thác Sức Mạnh Củ Nước",
-    "description": "Dẫn đầu chuyển đổi năng lượng bền vững tại Việt Nam thông qua các giải pháp thủy điện đổi mới. Hơn 20 năm kinh nghiệm trong sản xuất điện sạch.",
+    "description": "Nhà thầu thiết bị cơ điện thủy điện, nhập khẩu, vận chuyển và xây lắp điện. Hơn 20 năm kinh nghiệm trong sản xuất điện sạch.",
     "ctaPrimary": "Khám Phá Dự Án",
     "ctaSecondary": "Tìm Hiểu Thêm"
   },
@@ -40,8 +40,8 @@
   "about": {
     "tagline": "Về Chúng Tôi",
     "title": "Tiên Phong Năng Lượng Bền Vững",
-    "description1": "Là một trong những công ty thủy điện hàng đầu Việt Nam, chúng tôi cam kết cung cấp năng lượng sạch, đáng tin cậy trong khi bảo vệ môi trường.",
-    "description2": "Các cơ sở hiện đại của chúng tôi khai thác sức mạnh tự nhiên của nước để tạo ra điện cho hàng triệu hộ gia đình và doanh nghiệp trên cả nước.",
+    "description1": "Nhà thầu thiết bị cơ điện thủy điện hàng đầu Việt Nam, chuyên nhập khẩu, vận chuyển và xây lắp điện các dự án thủy điện trong và ngoài nước.",
+    "description2": "Với đội ngũ kỹ sư giàu kinh nghiệm, chúng tôi đã thực hiện thành công nhiều dự án thủy điện tại Việt Nam và Lào, đảm bảo chất lượng và tiến độ thi công.",
     "features": {
       "certified": "Chứng Nhận ISO 14001 Môi Trường",
       "technology": "Công Nghệ Tuabin Tiên Tiến",
@@ -52,19 +52,19 @@
   },
   "services": {
     "tagline": "Dịch Vụ",
-    "title": "Giải Pháp Thủy Điện Toàn Diện",
-    "subtitle": "Từ phát triển đến vận hành, chúng tôi cung cấp dịch vụ trọn gói",
+    "title": "Dịch Vụ Năng Lượng Thủy Điện",
+    "subtitle": "Nhà thầu thiết bị cơ điện, nhập khẩu, vận chuyển và xây lắp điện",
     "powerGeneration": {
-      "title": "Sản Xuất Điện",
-      "description": "Sản xuất điện tái tạo, sạch sử dụng công nghệ thủy điện tiên tiến với tác động môi trường tối thiểu."
+      "title": "Thiết Bị Cơ Điện",
+      "description": "Cung cấp và lắp đặt thiết bị cơ điện thủy điện nhập khẩu, đảm bảo chất lượng cao và công nghệ tiên tiến."
     },
     "plantOperations": {
-      "title": "Vận Hành Nhà Máy",
-      "description": "Giám sát và bảo trì 24/7 đảm bảo hiệu suất tối ưu và độ tin cậy của các cơ sở thủy điện."
+      "title": "Xây Lắp Điện",
+      "description": "Thi công xây lắp điện các công trình thủy điện với đội ngũ kỹ sư giàu kinh nghiệm, đảm bảo tiến độ và an toàn."
     },
     "environmental": {
-      "title": "Quản Lý Môi Trường",
-      "description": "Các thực tiễn bền vững bảo vệ hệ sinh thái địa phương trong khi tối đa hóa hiệu quả sản xuất năng lượng."
+      "title": "Vận Chuyển Hàng Hóa",
+      "description": "Dịch vụ vận chuyển thiết bị, hàng hóa cho các dự án thủy điện trong và ngoài nước."
     },
     "learnMore": "Tìm Hiểu Thêm"
   },
@@ -73,16 +73,16 @@
     "title": "Các Dự Án Lớn",
     "subtitle": "Thể hiện cam kết của chúng tôi với năng lượng bền vững",
     "project1": {
-      "title": "Nhà Máy Thủy Điện Sông Ba",
+      "title": "Thủy Điện Nậm Nghiệp 2A - Lào",
+      "location": "Lào",
+      "capacity": "Lắp hạ rotor TM1",
+      "description": "Dự án thủy điện tại nước bạn Lào, lắp hạ rotor TM1 thành công tốt đẹp"
+    },
+    "project2": {
+      "title": "Thủy Điện Sông Ba",
       "location": "Tỉnh Gia Lai",
       "capacity": "220 MW",
       "description": "Một trong những cơ sở thủy điện lớn nhất tại miền Trung Việt Nam"
-    },
-    "project2": {
-      "title": "Tổ Hợp Thủy Điện Đồng Nai",
-      "location": "Tỉnh Lâm Đồng",
-      "capacity": "180 MW",
-      "description": "Hệ thống đa đập cung cấp năng lượng sạch cho miền Nam Việt Nam"
     },
     "viewDetails": "Xem Chi Tiết"
   },
@@ -163,17 +163,17 @@
     "quickLinks": "Liên Kết Nhanh",
     "services": "Dịch Vụ",
     "contact": "Liên Hệ",
-    "address": "123 Đường Năng Lượng, Quận 1, TP. Hồ Chí Minh",
+    "address": "LK26.77, KĐT Hinode Royal Park, Hà Nội",
     "phone": "+84 28 1234 5678",
-    "email": "info@hydropower.vn",
+    "email": "pecpower.vn@gmail.com",
     "hours": "Thứ 2 - Thứ 6: 8:00 - 17:00",
-    "copyright": "© 2026 HydroPower Vietnam. Bảo lưu mọi quyền.",
+    "copyright": "© 2026 PECPower. Bảo lưu mọi quyền.",
     "privacy": "Chính Sách Bảo Mật",
     "terms": "Điều Khoản Dịch Vụ"
   },
   "seo": {
-    "title": "HydroPower Vietnam | Công Ty Thủy Điện Hàng Đầu",
-    "description": "Công ty thủy điện hàng đầu Việt Nam cung cấp giải pháp năng lượng sạch, bền vững. Công suất 2.500+ MW phục vụ hàng triệu hộ gia đình.",
+    "title": "PECPower | Công Ty Thủy Điện Hàng Đầu Việt Nam",
+    "description": "Nhà thầu thiết bị cơ điện thủy điện hàng đầu Việt Nam, nhập khẩu, vận chuyển và xây lắp điện. Thực hiện các dự án thủy điện tại Việt Nam và Lào.",
     "keywords": "thủy điện, Việt Nam, năng lượng sạch, năng lượng tái tạo, nhà máy điện, năng lượng bền vững, hydroelectric"
   }
 }

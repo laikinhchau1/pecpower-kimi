@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Droplets, Eye, EyeOff, Lock, User } from 'lucide-react';
+import { Eye, EyeOff, Lock, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -42,9 +42,11 @@ export function AdminLogin() {
         <CardHeader className="space-y-4 text-center pb-8">
           {/* Logo */}
           <div className="flex justify-center">
-            <div className="p-4 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 shadow-lg">
-              <Droplets className="w-10 h-10 text-white" />
-            </div>
+            <img 
+              src="/logo.svg" 
+              alt="PECPower" 
+              className="h-28 w-auto"
+            />
           </div>
           
           <div>

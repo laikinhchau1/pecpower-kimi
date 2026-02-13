@@ -41,7 +41,7 @@ const articleDetails = {
       category: 'Projects',
       readTime: '5 min read',
       content: `
-        <p class="mb-4">Today, we are proud to announce that our new 150MW hydropower plant has officially commenced operations. This marks a significant milestone in our strategy to expand clean energy production capacity.</p>
+        <p class="mb-4">Today, we are proud to announce that our new 150MW PECPower plant has officially commenced operations. This marks a significant milestone in our strategy to expand clean energy production capacity.</p>
         
         <h3 class="text-xl font-bold text-[#0a1e3f] mt-6 mb-3">Advanced Technology</h3>
         <p class="mb-4">The plant is equipped with the latest generation Francis turbines, achieving conversion efficiency of up to 94%. The 24/7 automated monitoring system ensures safe and efficient operations.</p>
@@ -144,14 +144,14 @@ const articleDetails = {
         <p class="mb-4">The company announces plans to invest in expanding renewable energy capacity by an additional 500MW during 2026-2028. This is a significant step in our sustainable development strategy.</p>
         
         <h3 class="text-xl font-bold text-[#0a1e3f] mt-6 mb-3">Key Projects</h3>
-        <p class="mb-4">The plan includes constructing 3 new hydropower plants and upgrading 5 existing facilities. Total estimated investment is 15,000 billion VND.</p>
+        <p class="mb-4">The plan includes constructing 3 new PECPower plants and upgrading 5 existing facilities. Total estimated investment is 15,000 billion VND.</p>
         
         <h3 class="text-xl font-bold text-[#0a1e3f] mt-6 mb-3">International Cooperation</h3>
         <p class="mb-4">We have signed partnerships with European and Japanese partners to transfer the most advanced hydroelectric technology.</p>
         
         <h3 class="text-xl font-bold text-[#0a1e3f] mt-6 mb-3">Implementation Roadmap</h3>
         <ul class="list-disc list-inside mb-4 text-gray-600">
-          <li>2026: Begin Sông Xanh hydropower plant construction (200MW)</li>
+          <li>2026: Begin Sông Xanh PECPower plant construction (200MW)</li>
           <li>2027: Plant operations and new project groundbreaking</li>
           <li>2028: Complete entire expansion roadmap</li>
         </ul>
