@@ -1,0 +1,176 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "projects": "Dự án",
+    "services": "Dịch vụ",
+    "news": "Tin tức",
+    "contact": "Liên hệ",
+    "getQuote": "Nhận báo giá"
+  },
+  "hero": {
+    "tagline": "NĂNG LƯỢNG SẠCH CHO TƯƠNG LAI",
+    "title": "Khai Thác Sức Mạnh Củ Nước",
+    "description": "Dẫn đầu chuyển đổi năng lượng bền vững tại Việt Nam thông qua các giải pháp thủy điện đổi mới. Hơn 20 năm kinh nghiệm trong sản xuất điện sạch.",
+    "ctaPrimary": "Khám Phá Dự Án",
+    "ctaSecondary": "Tìm Hiểu Thêm"
+  },
+  "stats": {
+    "capacity": {
+      "value": "2.500+",
+      "unit": "MW",
+      "label": "Tổng Công Suất"
+    },
+    "plants": {
+      "value": "15+",
+      "label": "Nhà Máy"
+    },
+    "homes": {
+      "value": "5M+",
+      "label": "Hộ Gia Đình"
+    },
+    "experience": {
+      "value": "25+",
+      "label": "Năm Kinh Nghiệm"
+    }
+  },
+  "about": {
+    "tagline": "Về Chúng Tôi",
+    "title": "Tiên Phong Năng Lượng Bền Vững",
+    "description1": "Là một trong những công ty thủy điện hàng đầu Việt Nam, chúng tôi cam kết cung cấp năng lượng sạch, đáng tin cậy trong khi bảo vệ môi trường.",
+    "description2": "Các cơ sở hiện đại của chúng tôi khai thác sức mạnh tự nhiên của nước để tạo ra điện cho hàng triệu hộ gia đình và doanh nghiệp trên cả nước.",
+    "features": {
+      "certified": "Chứng Nhận ISO 14001 Môi Trường",
+      "technology": "Công Nghệ Tuabin Tiên Tiến",
+      "monitoring": "Hệ Thống Giám Sát 24/7",
+      "community": "Chương Trình Phát Triển Cộng Đồng"
+    },
+    "cta": "Tìm Hiểu Câu Chuyện"
+  },
+  "services": {
+    "tagline": "Dịch Vụ",
+    "title": "Giải Pháp Thủy Điện Toàn Diện",
+    "subtitle": "Từ phát triển đến vận hành, chúng tôi cung cấp dịch vụ trọn gói",
+    "powerGeneration": {
+      "title": "Sản Xuất Điện",
+      "description": "Sản xuất điện tái tạo, sạch sử dụng công nghệ thủy điện tiên tiến với tác động môi trường tối thiểu."
+    },
+    "plantOperations": {
+      "title": "Vận Hành Nhà Máy",
+      "description": "Giám sát và bảo trì 24/7 đảm bảo hiệu suất tối ưu và độ tin cậy của các cơ sở thủy điện."
+    },
+    "environmental": {
+      "title": "Quản Lý Môi Trường",
+      "description": "Các thực tiễn bền vững bảo vệ hệ sinh thái địa phương trong khi tối đa hóa hiệu quả sản xuất năng lượng."
+    },
+    "learnMore": "Tìm Hiểu Thêm"
+  },
+  "projects": {
+    "tagline": "Dự Án Tiêu Biểu",
+    "title": "Các Dự Án Lớn",
+    "subtitle": "Thể hiện cam kết của chúng tôi với năng lượng bền vững",
+    "project1": {
+      "title": "Nhà Máy Thủy Điện Sông Ba",
+      "location": "Tỉnh Gia Lai",
+      "capacity": "220 MW",
+      "description": "Một trong những cơ sở thủy điện lớn nhất tại miền Trung Việt Nam"
+    },
+    "project2": {
+      "title": "Tổ Hợp Thủy Điện Đồng Nai",
+      "location": "Tỉnh Lâm Đồng",
+      "capacity": "180 MW",
+      "description": "Hệ thống đa đập cung cấp năng lượng sạch cho miền Nam Việt Nam"
+    },
+    "viewDetails": "Xem Chi Tiết"
+  },
+  "technology": {
+    "tagline": "Công Nghệ",
+    "title": "Công Nghệ Tiên Tiến",
+    "description": "Chúng tôi áp dụng những tiến bộ mới nhất trong công nghệ thủy điện để tối đa hóa hiệu quả và giảm thiểu tác động môi trường.",
+    "features": {
+      "turbines": {
+        "title": "Tuabin Francis & Kaplan",
+        "description": "Tối ưu hóa cho các điều kiện dòng chảy nước khác nhau"
+      },
+      "smartGrid": {
+        "title": "Tích Hợp Lưới Điện Thông Minh",
+        "description": "Quản lý phân phối điện thởi gian thực"
+      },
+      "maintenance": {
+        "title": "Bảo Trì Dự Đoán",
+        "description": "Giám sát hệ thống powered by AI"
+      },
+      "eco": {
+        "title": "Thiết Kế Thân Thiện Sinh Vật",
+        "description": "Bảo vệ hệ sinh thái thủy sinh"
+      }
+    }
+  },
+  "testimonials": {
+    "tagline": "Đánh Giá",
+    "title": "Đối Tác Nói Gì",
+    "testimonial1": {
+      "quote": "Cam kết của họ về năng lượng bền vững phù hợp hoàn hảo với mục tiêu môi trường của chúng tôi.",
+      "name": "Nguyễn Văn An",
+      "role": "CEO, Green Energy Corp"
+    },
+    "testimonial2": {
+      "quote": "Nguồn cung điện đáng tin cậy và tiêu chuẩn vận hành xuất sắc.",
+      "name": "Trần Thị Bình",
+      "role": "Giám Đốc, EVN Miền Trung"
+    },
+    "testimonial3": {
+      "quote": "Dẫn đầu trong đổi mới năng lượng sạch tại Việt Nam.",
+      "name": "Lê Hoàng Nam",
+      "role": "Bộ Công Thương"
+    }
+  },
+  "news": {
+    "tagline": "Tin Tức Mới",
+    "title": "Cập Nhật Công Ty",
+    "subtitle": "Cập nhật những phát triển mới nhất của chúng tôi",
+    "article1": {
+      "title": "Nhà Máy 150MW Mới Đi Vào Vận Hành",
+      "date": "15/01/2026",
+      "excerpt": "Cơ sở thủy điện mới nhất của chúng tôi bắt đầu hoạt động...",
+      "category": "Dự Án"
+    },
+    "article2": {
+      "title": "Giải Thưởng Xuất Sắc Môi Trường 2025",
+      "date": "20/12/2025",
+      "excerpt": "Được ghi nhận vì quản lý môi trường xuất sắc...",
+      "category": "Giải Thưởng"
+    },
+    "article3": {
+      "title": "Mở Rộng Công Suất Năng Lượng Tái Tạo",
+      "date": "10/11/2025",
+      "excerpt": "Công bố kế hoạch cho các dự án năng lượng bền vững mới...",
+      "category": "Tin Tức"
+    },
+    "readMore": "Đọc Thêm"
+  },
+  "cta": {
+    "title": "Sẵn Sàng Cung Cấp Năng Lượng Tương Lai?",
+    "description": "Hợp tác với chúng tôi để có giải pháp năng lượng bền vững thúc đẩy tăng trưởng trong khi bảo vệ hành tinh.",
+    "primary": "Liên Hệ Ngay",
+    "secondary": "Tải Brochure"
+  },
+  "footer": {
+    "description": "Dẫn đầu chuyển đổi năng lượng bền vững tại Việt Nam thông qua các giải pháp thủy điện đổi mới.",
+    "quickLinks": "Liên Kết Nhanh",
+    "services": "Dịch Vụ",
+    "contact": "Liên Hệ",
+    "address": "123 Đường Năng Lượng, Quận 1, TP. Hồ Chí Minh",
+    "phone": "+84 28 1234 5678",
+    "email": "info@hydropower.vn",
+    "hours": "Thứ 2 - Thứ 6: 8:00 - 17:00",
+    "copyright": "© 2026 HydroPower Vietnam. Bảo lưu mọi quyền.",
+    "privacy": "Chính Sách Bảo Mật",
+    "terms": "Điều Khoản Dịch Vụ"
+  },
+  "seo": {
+    "title": "HydroPower Vietnam | Công Ty Thủy Điện Hàng Đầu",
+    "description": "Công ty thủy điện hàng đầu Việt Nam cung cấp giải pháp năng lượng sạch, bền vững. Công suất 2.500+ MW phục vụ hàng triệu hộ gia đình.",
+    "keywords": "thủy điện, Việt Nam, năng lượng sạch, năng lượng tái tạo, nhà máy điện, năng lượng bền vững, hydroelectric"
+  }
+}

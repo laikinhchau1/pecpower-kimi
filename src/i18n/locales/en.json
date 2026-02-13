@@ -1,0 +1,176 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "services": "Services",
+    "news": "News",
+    "contact": "Contact",
+    "getQuote": "Get Quote"
+  },
+  "hero": {
+    "tagline": "CLEAN ENERGY FOR TOMORROW",
+    "title": "Harnessing the Power of Water",
+    "description": "Leading Vietnam's transition to sustainable energy through innovative hydroelectric solutions. Over 20 years of excellence in clean power generation.",
+    "ctaPrimary": "Explore Our Projects",
+    "ctaSecondary": "Learn More"
+  },
+  "stats": {
+    "capacity": {
+      "value": "2,500+",
+      "unit": "MW",
+      "label": "Total Capacity"
+    },
+    "plants": {
+      "value": "15+",
+      "label": "Power Plants"
+    },
+    "homes": {
+      "value": "5M+",
+      "label": "Homes Powered"
+    },
+    "experience": {
+      "value": "25+",
+      "label": "Years of Experience"
+    }
+  },
+  "about": {
+    "tagline": "About Us",
+    "title": "Pioneering Sustainable Energy",
+    "description1": "As one of Vietnam's leading hydroelectric power companies, we are committed to delivering clean, reliable energy while protecting our environment.",
+    "description2": "Our state-of-the-art facilities harness the natural power of water to generate electricity for millions of homes and businesses across the country.",
+    "features": {
+      "certified": "ISO 14001 Environmental Certified",
+      "technology": "Advanced Turbine Technology",
+      "monitoring": "24/7 Monitoring Systems",
+      "community": "Community Development Programs"
+    },
+    "cta": "Learn Our Story"
+  },
+  "services": {
+    "tagline": "Our Services",
+    "title": "Comprehensive Hydroelectric Solutions",
+    "subtitle": "From development to operations, we provide end-to-end services",
+    "powerGeneration": {
+      "title": "Power Generation",
+      "description": "Clean, renewable electricity generation using advanced hydroelectric technology with minimal environmental impact."
+    },
+    "plantOperations": {
+      "title": "Plant Operations",
+      "description": "24/7 monitoring and maintenance ensuring optimal performance and reliability of hydroelectric facilities."
+    },
+    "environmental": {
+      "title": "Environmental Management",
+      "description": "Sustainable practices that protect local ecosystems while maximizing energy production efficiency."
+    },
+    "learnMore": "Learn More"
+  },
+  "projects": {
+    "tagline": "Featured Projects",
+    "title": "Our Major Projects",
+    "subtitle": "Showcasing our commitment to sustainable energy",
+    "project1": {
+      "title": "Sông Ba Hydropower Plant",
+      "location": "Gia Lai Province",
+      "capacity": "220 MW",
+      "description": "One of the largest hydroelectric facilities in Central Vietnam"
+    },
+    "project2": {
+      "title": "Đồng Nai Hydro Complex",
+      "location": "Lâm Đồng Province",
+      "capacity": "180 MW",
+      "description": "Multi-dam system providing clean energy to Southern Vietnam"
+    },
+    "viewDetails": "View Details"
+  },
+  "technology": {
+    "tagline": "Technology",
+    "title": "Cutting-Edge Technology",
+    "description": "We employ the latest advancements in hydroelectric technology to maximize efficiency and minimize environmental impact.",
+    "features": {
+      "turbines": {
+        "title": "Francis & Kaplan Turbines",
+        "description": "Optimized for different water flow conditions"
+      },
+      "smartGrid": {
+        "title": "Smart Grid Integration",
+        "description": "Real-time power distribution management"
+      },
+      "maintenance": {
+        "title": "Predictive Maintenance",
+        "description": "AI-powered system monitoring"
+      },
+      "eco": {
+        "title": "Fish-Friendly Design",
+        "description": "Protecting aquatic ecosystems"
+      }
+    }
+  },
+  "testimonials": {
+    "tagline": "Testimonials",
+    "title": "What Partners Say",
+    "testimonial1": {
+      "quote": "Their commitment to sustainable energy aligns perfectly with our environmental goals.",
+      "name": "Nguyễn Văn An",
+      "role": "CEO, Green Energy Corp"
+    },
+    "testimonial2": {
+      "quote": "Reliable power supply and excellent operational standards.",
+      "name": "Trần Thị Bình",
+      "role": "Director, EVN Central"
+    },
+    "testimonial3": {
+      "quote": "Leading the way in clean energy innovation in Vietnam.",
+      "name": "Lê Hoàng Nam",
+      "role": "Ministry of Industry & Trade"
+    }
+  },
+  "news": {
+    "tagline": "Latest News",
+    "title": "Company Updates",
+    "subtitle": "Stay updated with our latest developments",
+    "article1": {
+      "title": "New 150MW Plant Commissioned",
+      "date": "Jan 15, 2026",
+      "excerpt": "Our latest hydroelectric facility begins operations...",
+      "category": "Projects"
+    },
+    "article2": {
+      "title": "Environmental Excellence Award 2025",
+      "date": "Dec 20, 2025",
+      "excerpt": "Recognized for outstanding environmental management...",
+      "category": "Awards"
+    },
+    "article3": {
+      "title": "Expanding Renewable Capacity",
+      "date": "Nov 10, 2025",
+      "excerpt": "Plans announced for new sustainable energy projects...",
+      "category": "News"
+    },
+    "readMore": "Read More"
+  },
+  "cta": {
+    "title": "Ready to Power the Future?",
+    "description": "Partner with us for sustainable energy solutions that drive growth while protecting our planet.",
+    "primary": "Contact Us",
+    "secondary": "Download Brochure"
+  },
+  "footer": {
+    "description": "Leading Vietnam's sustainable energy transformation through innovative hydroelectric solutions.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contact": "Contact",
+    "address": "123 Energy Street, District 1, Ho Chi Minh City",
+    "phone": "+84 28 1234 5678",
+    "email": "info@hydropower.vn",
+    "hours": "Mon-Fri: 8:00 - 17:00",
+    "copyright": "© 2026 HydroPower Vietnam. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "seo": {
+    "title": "HydroPower Vietnam | Leading Hydroelectric Energy Company",
+    "description": "Vietnam's premier hydroelectric power company delivering clean, sustainable energy solutions. 2,500+ MW capacity serving millions of homes.",
+    "keywords": "hydroelectric, Vietnam, clean energy, renewable energy, power plant, sustainable energy, thủy điện, năng lượng tái tạo"
+  }
+}
